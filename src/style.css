@@ -1,0 +1,58 @@
+:root {
+  --bg-primary: #0b1020;
+  --bg-secondary: #0f172a;
+  --panel: rgba(255, 255, 255, 0.08);
+  --panel-border: rgba(255, 255, 255, 0.12);
+  --text-primary: #e5e7eb;
+  --text-secondary: #94a3b8;
+  --accent: #4da3ff;
+  --accent-2: #8b7cff;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(77, 163, 255, 0.2), transparent 35%),
+    radial-gradient(circle at 90% 0%, rgba(139, 124, 255, 0.15), transparent 28%),
+    linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.glass {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
